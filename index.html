@@ -10,10 +10,10 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/style-beetrack.css">
   </head>
-  <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="#inicio">
+  <body data-spy="scroll" data-target=".navbar" data-offset="20">
+	<nav id="topheader" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div id="#inicio" class="container">
+			<a class="navbar-brand" href="index.html">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860.39 179.25" aria-labelledby="logoTitile" role="img">
 					<title id="logoTitile">Logo Beetrack</title>
 					<path fill="#fff" d="M256.1,133.38c7.59,4.86,16.36,7.25,26.27,7.26a58.13,58.13,0,0,0,16-2.42,33.55,33.55,0,0,0,13.94-8c7.48-7.57,12.34-17.37,14.42-29.42q3.06-17.3-3.57-28.47c-.18-.31-.36-.62-.55-.92-4.89-7.57-12.17-11.32-21.82-11.33a33.28,33.28,0,0,0-14.15,2.86,37.25,37.25,0,0,0-7.39,4.87A31.33,31.33,0,0,0,275.19,72l4-23.26a8.25,8.25,0,0,0-.21-4.19,8.5,8.5,0,0,0-1.65-3,8.88,8.88,0,0,0-6.91-3.13H260L248.32,105.2c-2,11.5-.56,20,4.41,25.27A17.82,17.82,0,0,0,256.1,133.38Zm21.76-50.06a19,19,0,0,1,14.31-5.82q8,0,11.61,6.13c.21.34.39.71.57,1.08,1.92,3.78,2.31,8.81,1.22,15.24q-2,11.6-7.75,17.72a18.83,18.83,0,0,1-14.35,6.11q-6.29,0-9.86-3.46a12.22,12.22,0,0,1-2.07-2.66q-3.39-5.55-1.22-17.73C271.51,92.88,274,87.41,277.86,83.32Z"></path>
@@ -42,27 +42,30 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+						<li id="inicio" class="nav-item active">
+							<a class="nav-link" href="#">Inicio</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#inicio">Primeros pasos</a>
+							<a class="nav-link" href="#primeros-pasos">Primeros pasos</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#herramientas">Herramientas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#pruebas">Pruebas</a>
 						</li>
 					</ul>
 				</div>
 			</div>	
 			</nav>
-		<section class="ftco-section">
+		<section  id="primeros-pasos" class="ftco-section mt-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<h2 class="heading-section mb-5">Newbees on Sales 🐝</h2>
 					</div>
 				</div>
-				<div id="inicio" class="row justify-content-center">
+				<div class="row justify-content-center pt-5">
 					<div class="col-md-12">
 						<h3>Primeros pasos</h3>
 						<p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium ante urna, sed varius nisi fermentum vitae. Sed iaculis efficitur eros ut accumsan. Sed vitae ullamcorper tortor. Aliquam ullamcorper libero at justo maximus sagittis. Cras porta gravida elit in dictum. Sed laoreet vulputate nulla, eu congue dolor.</p>
@@ -90,7 +93,7 @@
 					  </ul>
 					</div>
 				</div>
-				<div id="herramientas" class="row justify-content-center">
+				<div id="herramientas" class="row justify-content-center pt-5 nav-padding">
 					<div class="col-md-12">
 						<h3>Herramientas</h3>
 						<p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium ante urna, sed varius nisi fermentum vitae. Sed iaculis efficitur eros ut accumsan. Sed vitae ullamcorper tortor. Aliquam ullamcorper libero at justo maximus sagittis. Cras porta gravida elit in dictum. Sed laoreet vulputate nulla, eu congue dolor.</p>
@@ -114,6 +117,34 @@
 						<li>
 					    	<input type="checkbox" id="10" class="box">
 					    	<label for="10">Presentaciones a clientes y conceptos 🤝</label>
+					    </li>
+					  </ul>
+					</div>
+				</div>
+				<div id="pruebas" class="row justify-content-center pt-5 nav-padding">
+					<div class="col-md-12 pt-2">
+						<h3>Pruebas</h3>
+						<p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pretium ante urna, sed varius nisi fermentum vitae. Sed iaculis efficitur eros ut accumsan. Sed vitae ullamcorper tortor. Aliquam ullamcorper libero at justo maximus sagittis. Cras porta gravida elit in dictum. Sed laoreet vulputate nulla, eu congue dolor.</p>
+						<ul class="ks-cboxtags">
+					    <li>
+					    	<input type="checkbox" id="11" class="box">
+					    	<label for="11">Presentación de industrias y un buen deal 👌🏻</label>
+					    </li>
+					    <li>
+					    	<input type="checkbox" id="12" class="box">
+					    	<label for="12">Presentación Comercial</label>
+					    </li>
+					    <li>
+					    	<input type="checkbox" id="13" class="box">
+					    	<label for="13">Herramientas</label>
+					    </li>
+						<li>
+					    	<input type="checkbox" id="14" class="box">
+					    	<label for="14">Lead Generation 💪🏻</label>
+					    </li>
+						<li>
+					    	<input type="checkbox" id="15" class="box">
+					    	<label for="15">Presentaciones a clientes y conceptos 🤝</label>
 					    </li>
 					  </ul>
 					</div>

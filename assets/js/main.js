@@ -32,4 +32,13 @@ for(let i = 1; i <= boxes; i++){
 }
 window.addEventListener('change', save);
 
-var scroll = new SmoothScroll('a[href*="#"]');
+document.addEventListener("DOMContentLoaded", function(){
+	window.addEventListener('scroll', function() {
+		if (window.scrollY > 10) {
+		  document.getElementById('inicio').classList.remove('active');
+		} else if (window.scrollY <= 10) {
+		  document.getElementById('inicio').classList.add('active'); //Clase para dejar activa la sección Home on top
+		} 
+	});
+  });
+  

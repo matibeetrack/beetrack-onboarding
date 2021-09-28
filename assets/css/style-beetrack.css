@@ -1,5 +1,7 @@
 /* Modificación navbar */
-
+html {
+    scroll-behavior: smooth;
+}
 .navbar-brand svg {
     width: 130px;
 }
