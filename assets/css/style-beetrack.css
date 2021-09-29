@@ -5,3 +5,7 @@ html {
 .navbar-brand svg {
     width: 130px;
 }
+
+.bg-yellow {
+    background-color: #f5b63e;
+}
