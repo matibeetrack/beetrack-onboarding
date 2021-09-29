@@ -41,3 +41,27 @@ document.addEventListener("DOMContentLoaded", function(){
 		} 
 	});
   });
+
+// Contar valores verdaderos
+
+let valoreslocalStorage = Object.values(localStorage)
+let valoresVerdaderos = valoreslocalStorage.filter(checkValue).length
+let valoresTotales = localStorage.length
+
+function checkValue(verdadero) {
+    return  verdadero == "true";
+}
+
+// //Progress bar dynamically updates
+
+var porcentajeDeAvance = ((valoresVerdaderos/valoresTotales)*100);
+var i = 1;
+function makeProgress(){
+    if(i < porcentajeDeAvance){
+		i = i + 1;
+        $(".progress-bar").css("width", i + "%").text(i + "%");
+    }
+    // Wait for sometime before running this script again
+    setTimeout("makeProgress()", 1);
+}
+makeProgress();
