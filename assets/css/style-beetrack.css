@@ -9,3 +9,7 @@ html {
 .bg-yellow {
     background-color: #f5b63e;
 }
+
+ul.ks-cboxtags li label {
+    white-space: normal;
+}
