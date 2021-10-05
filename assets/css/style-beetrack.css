@@ -13,3 +13,21 @@ html {
 ul.ks-cboxtags li label {
     white-space: normal;
 }
+
+b, strong {
+    font-weight: 600;
+}
+
+label a, label a:visited {
+    color: #f5b63e;
+}
+
+label a:hover, label a:focus {
+    border-bottom: 1px solid #f5b63e;
+    color: #f5b63e;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label a{
+    color: #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+}
