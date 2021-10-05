@@ -31,3 +31,9 @@ ul.ks-cboxtags li input[type="checkbox"]:checked + label a{
     color: #bfbfbf;
     border-bottom: 1px solid #bfbfbf;
 }
+
+.navbar-dark .navbar-text {
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+}
