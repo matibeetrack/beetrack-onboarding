@@ -19,12 +19,12 @@ b, strong {
 }
 
 label a, label a:visited {
-    color: #f5b63e;
+    color: #0792E0;
 }
 
 label a:hover, label a:focus {
-    border-bottom: 1px solid #f5b63e;
-    color: #f5b63e;
+    border-bottom: 1px solid #0792E0;
+    color: #0792E0;
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked + label a{
